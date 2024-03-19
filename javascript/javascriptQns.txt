@@ -1,6 +1,8 @@
 Basic to Advance JavaScript Topics :
 
-JS parsing and understanding browser/desktop/mobile level parsing
+** JS parsing and understanding by browser/desktop/mobile level parsing **
+** Babel **
+** Webpack, Rollup, Parcel **
 
 1. Basic Syntax and Data Types:
 Variables (var, let, const),
