@@ -1,0 +1,66 @@
+** What are the major or important differences between JavaScript in 2015 and JavaScript in 1995? **
+
+
+The differences between JavaScript in 2015 (ES6/ES2015) and JavaScript in 1995 (ES1) are significant, reflecting the evolution and growth of the language over the years. Here are some of the major differences:
+
+Language Features:
+
+ES6 (2015) introduced numerous new language features and syntax enhancements, including arrow functions, classes, template literals, destructuring assignment, default parameters, rest parameters, and spread syntax.
+ES1 (1995) was the initial version of JavaScript and lacked many of these modern features. It provided basic functionality such as variables, functions, loops, and conditionals.
+Module System:
+
+ES6 (2015) introduced native support for modules with the import and export keywords, allowing developers to organize their code into reusable modules and manage dependencies more effectively.
+ES1 (1995) did not have a built-in module system. Developers had to rely on techniques like global variables and function encapsulation to manage code organization and reuse.
+Scope and Hoisting:
+
+ES6 (2015) introduced block-scoped variables (let and const), which behave differently from the function-scoped variables (var) in earlier versions.
+ES1 (1995) only had function-scoped variables declared with the var keyword. Variable declarations using var are hoisted to the top of their containing function or script.
+Object-Oriented Programming:
+
+ES6 (2015) introduced class syntax for defining objects and constructors, making it easier to work with object-oriented programming concepts. It also introduced extends and super keywords for class inheritance.
+ES1 (1995) relied on prototype-based inheritance and constructor functions for object creation and inheritance.
+Iterators and Generators:
+
+ES6 (2015) introduced iterator and generator protocols, allowing developers to define custom iteration behavior for objects and implement lazy evaluation patterns.
+ES1 (1995) did not have built-in support for iterators or generators.
+Promises and Asynchronous Programming:
+
+ES6 (2015) introduced native Promise objects for asynchronous programming, providing a cleaner and more flexible alternative to callback-based asynchronous code.
+ES1 (1995) primarily relied on callback functions for handling asynchronous operations, leading to callback hell and less readable code.
+Standard Library Enhancements:
+
+ES6 (2015) introduced several enhancements to the standard library, including new methods for arrays (map, filter, find, includes), string manipulation (startsWith, endsWith, repeat), and objects (Object.assign, Object.keys, Object.values).
+ES1 (1995) had a more limited standard library with basic built-in objects such as Array, String, Object, and Function.
+These are just a few examples of the major differences between JavaScript in 2015 (ES6) and JavaScript in 1995 (ES1). Over the years, JavaScript has evolved significantly, adding new features, improving syntax, and enhancing the developer experience.
+
+
+Strict Mode:
+
+ES6 (2015) introduced strict mode, which enforces stricter parsing and error handling rules. It helps catch common programming errors and prevents problematic or ambiguous syntax from being executed silently.
+ES1 (1995) did not have strict mode. JavaScript code in earlier versions was more lenient, leading to potential bugs and unintended behavior.
+Arrow Functions:
+
+ES6 (2015) introduced arrow functions (=> syntax), which provide a concise syntax for defining anonymous functions. They also have lexical this binding, making them useful for callbacks and avoiding the need for bind() or self workarounds.
+ES1 (1995) did not have arrow functions. Functions were defined using the function keyword, which could lead to verbosity and potential confusion with this scoping.
+Template Literals:
+
+ES6 (2015) introduced template literals, allowing for more expressive string interpolation and multiline strings using backticks (`).
+ES1 (1995) did not support template literals. Concatenation or string manipulation was typically used to achieve similar functionality.
+Enhanced Object Literals:
+
+ES6 (2015) enhanced object literals with shorthand property syntax ({ x, y } instead of { x: x, y: y }), computed property names ({ [expression]: value }), and method definitions ({ method() { ... } }).
+ES1 (1995) had simpler object literal syntax without these enhancements.
+Promises:
+
+ES6 (2015) introduced native Promise objects for handling asynchronous operations and composing asynchronous code in a more readable and manageable way.
+ES1 (1995) primarily relied on callback functions for asynchronous programming, which could lead to callback hell and difficult-to-read code.
+For...of Loop:
+
+ES6 (2015) introduced the for...of loop for iterating over iterable objects (e.g., arrays, strings, maps, sets), providing a more concise and readable alternative to traditional for loops.
+ES1 (1995) did not have the for...of loop. Iteration over arrays was typically done using for loops with index variables.
+Modules:
+
+ES6 (2015) introduced native support for ECMAScript modules (import and export statements), allowing developers to organize code into reusable modules and manage dependencies more effectively.
+ES1 (1995) did not have a built-in module system. Developers relied on global variables and function encapsulation for code organization and reuse.
+These technical differences highlight the advancements and improvements made to the JavaScript language and its capabilities between ES6 and ES1. ES6 introduced numerous features and enhancements aimed at improving developer productivity, code readability, and maintainability.
+
