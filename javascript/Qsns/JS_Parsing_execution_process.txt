@@ -1,0 +1,23 @@
+
+** The execution begins in the call stack only after tokenization, AST creation, and the memory allocation for variables is completed. **
+
+
+Yes, you're correct. Before the script execution begins, several steps occur in the JavaScript engine's preparation process, including tokenization, creation of the Abstract Syntax Tree (AST), and memory allocation for variables and other data structures. Here's a brief overview of these steps:
+
+Tokenization (Lexical Analysis):
+
+The JavaScript engine performs tokenization, also known as lexical analysis, where the source code is broken down into individual tokens (e.g., keywords, identifiers, operators, punctuation).
+Each token represents a meaningful unit of the source code and serves as the input for the subsequent parsing phase.
+Abstract Syntax Tree (AST) Creation:
+
+After tokenization, the engine constructs an Abstract Syntax Tree (AST) from the tokens generated in the previous step.
+The AST represents the syntactic structure of the code in a hierarchical tree-like format, where each node corresponds to a syntactic construct (e.g., function declaration, variable assignment, expression).
+The AST facilitates the understanding and interpretation of the code by the JavaScript engine during execution.
+Memory Allocation for Variables and Data Structures:
+
+As the AST is being constructed, the JavaScript engine allocates memory for variables, objects, and other data structures defined in the code.
+Memory allocation includes creating storage space for variables and initializing them with default values (e.g., undefined for variables without an explicit initialization).
+Execution Begins in the Call Stack:
+
+Once tokenization, AST creation, and memory allocation are completed, the JavaScript engine begins executing the script.
+The initial function or code block defined in the script is pushed onto the call stack, marking the start of execution.

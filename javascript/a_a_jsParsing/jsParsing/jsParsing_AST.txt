@@ -1,0 +1,6 @@
+** JS parsing **
+
+browser engine (V8 for chrome) - will responsible for downloading the js files part of html
+- downloads js without blocking html parsing (deffer, async, end of body tag)
+- execution of js without blocking html parsing (deffer, end of body tag)
+- execution of js with blocking html parsing (async, inline js, inside head tag)
