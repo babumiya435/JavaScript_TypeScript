@@ -10,3 +10,4 @@ const PI = 3.14;  // inferred type - number
 console.log(num, typeof(num));
 console.log(str, typeof(str));
 console.log(PI, typeof(PI));
+//-------------------------------------------------------------
