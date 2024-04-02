@@ -1,0 +1,32 @@
+** 1_Basic_Syntax_and_Data_Types in JS **
+
+Available Variable declarations in JS (Different ways of variable declarations vary variable scope accordingly):
+    (Defines the scope of the variable define)
+    without any declaration keyword --> (test;)
+    var --> (var a;)
+    let --> (let b;)
+    const --> (const c;)
+
+- without any declaration keyword
+    - noKey = 5; 
+    - will have global scope
+    - (declaration + initialization unlike const variable)
+    - trying to access this variable before decla + initi -> "ReferenceError: noKey is not defined"
+    - no hoisting + no Temporal Dead Zone (no memory allocated before decla + initi)
+    - not a good programming practice to use such varibales
+    - uses : 1.Rapid Prototyping or Quick Scripting, 2.Debugging or Testing, 3.Legacy Code or Specialized Use Cases
+
+- var
+    - var a; var a = 5;
+    - will have global + functional scope
+    - hoisting (able to access variables declared using var before declaration)
+    - memory allocation is done before declaration and initialized with 'undefined'
+    - not a good programming practice to use such varibales as it can accessed/modified globally
+    - uses: 
+    
+- let
+- const
+
+    
+
+

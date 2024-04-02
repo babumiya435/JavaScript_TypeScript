@@ -11,3 +11,11 @@ node test ------>   executes js code
     ECMA SCRIPT rules.
 -   So variables decalred in one file will be available in other file (just visible and cant be used unless).
 -   With multiple .js files this phenomenon does not occur. (each .js file has its own scope)
+---------------------------------------------------------------------------------------------
+Available Variable declarations in TS:
+    without any declaration keyword
+    var,
+    let,
+    const,
+    public,
+    private
