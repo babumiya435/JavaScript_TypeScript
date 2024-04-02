@@ -1,1 +1,13 @@
-1_Types_and_Variables_Understanding_basic_data_types_(string,_number,_boolean)
+** 1_Types_and_Variables_Understanding_basic_data_types_(string,_number,_boolean) **
+
+So, if you have a variable declared in both the TypeScript file (.ts) and the JavaScript file (.js) within the same folder with the same name, 
+TypeScript considers them as redeclarations within the same module scope, leading to the error.
+
+node test.js --->   executes js code
+node test.ts --->   executes ts code
+node test ------>   executes js code
+
+-   So in a single folder if we have both (.js, .ts) files - will be considered as same module as per 
+    ECMA SCRIPT rules.
+-   So variables decalred in one file will be available in other file (just visible and cant be used unless).
+-   With multiple .js files this phenomenon does not occur. (each .js file has its own scope)
