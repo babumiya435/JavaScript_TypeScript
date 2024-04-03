@@ -18,14 +18,30 @@ Available Variable declarations in JS (Different ways of variable declarations v
 
 - var
     - var a; var a = 5;
-    - will have global + functional scope
+    - will have functional scope
     - hoisting (able to access variables declared using var before declaration)
     - memory allocation is done before declaration and initialized with 'undefined'
     - not a good programming practice to use such varibales as it can accessed/modified globally
-    - uses: 
-    
+    - uses: 1.Function Scope, 2.Hoisting, 3.Global Scope, 4.Re-declaration
+
 - let
+    - let a; let a = 10;
+    - will have block scope
+    - partial hoisting (Until the point of variable declaration, variables will be in the temporal dead zone.), 
+        once it is out of TDZ and memory will be allocated to let variable and hoisted
+    - good practice to use.
+    - uses: 1.Block Scope, 2.Preventing Variable Re-declaration, 3.Eliminating Hoisting Issues, 4.For Loop Iteration, 5.Constants
+    - let status = "Pendign" as const
+
 - const
+    - const a = 10;
+    - will have block scope
+    - partial hoisting (Until the point of variable declaration, variables will be in the temporal dead zone.), 
+        once it is out of TDZ and memory will be allocated to let variable and hoisted
+    - good practice to use.
+    - uses: 1.Block Scope, 2.Preventing Variable Re-declaration & Preventing Reassignment, 
+        3.Eliminating Hoisting Issues, 4.Immutable Values, 5.Constants in Loops, 6.Object and Array Constants
+    - let status = "Pendign" as const
 
     
 
