@@ -42,11 +42,24 @@ const c = 10; // at the time of declaration we should do assignment too or Synta
 
 // ----------------- variable with let declaration keyword (block Scope) ----------------------
 
-console.log("before let declaration :",statusValue); // ReferenceError: Cannot access 'statusValue' before initialization
+//console.log("before let declaration :",statusValue); // ReferenceError: Cannot access 'statusValue' before initialization
 //console.log("before const declaration :",PI); // ReferenceError: Cannot access 'PI' before initialization
-let statusValue;
-const PI = 3.14;
-console.log("after let declaration :",statusValue); // after let declaration : undefined - able to access the variable decared with let and its value would be hoisted to undefined
-statusValue = "'Pending'";
-console.log("after let initialization/assignment :",statusValue); // after let initialization/assignment : 'Pending'
-console.log("after const declaration :",PI); // after const declaration : 3.14
+//let statusValue;
+//const PI = 3.14;
+//console.log("after let declaration :",statusValue); // after let declaration : undefined - able to access the variable decared with let and its value would be hoisted to undefined
+//statusValue = "'Pending'";
+//console.log("after let initialization/assignment :",statusValue); // after let initialization/assignment : 'Pending'
+//console.log("after const declaration :",PI); // after const declaration : 3.14
+
+function accumilator (arr) {
+    let ans = arr.reduce((acc, val) => {
+        if (val < 10){
+            return acc + val;
+        }
+    },0);
+    
+    return ans;
+}
+
+let arr = [1,2,3,4];
+console.log(accumilator(arr));
