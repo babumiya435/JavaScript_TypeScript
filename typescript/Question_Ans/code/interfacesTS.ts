@@ -5,17 +5,22 @@ console.log("Interfaces in Typescript");
 // - adding multilevel type safety
 // - implementing classes with this types to have consistancy across the module/project
 interface Salary {
-    amount: number;
-    currency: string;
+    amount: number | string; // union types is fine
+    currency?: string;
 }
 
 interface Person {
     name: string;
     age: number;
-    salary: Salary;
+    salary?: Salary;
 }
 
-let emp2:Person = {
+interface Employee extends Person, Salary {
+    company: string;
+    companyAddress?: string;
+}
+
+let emp3:Person = {
     name: "Sameer",
     age: 30,
     salary: {
@@ -23,14 +28,13 @@ let emp2:Person = {
         currency: "INR"
     }
 }
-console.log(emp2);
+console.log(emp3);
 
 // 2. Usecases of interfaces what its advantages
 
 
 
 // 3. Implementations of interfaces in TS
-
 
 
 
