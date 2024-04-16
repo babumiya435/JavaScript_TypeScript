@@ -140,7 +140,119 @@ console.log(emp);
 
 
 // 3. Interfaces Drawbacks
+        // 1. Inability to Enforce Private Members:
+            // interface Person {
+            //     name: string;
+            //     age: number;
+            //     // Private member (not allowed in interfaces)
+            //     // privateId: number;
+            // }
+            
+            // class Student implements Person {
+            //     // Public properties
+            //     name: string;
+            //     age: number;
+            //     // Private member (allowed in classes)
+            //     private privateId: number;
+            
+            //     constructor(name: string, age: number, privateId: number) {
+            //     this.name = name;
+            //     this.age = age;
+            //     this.privateId = privateId;
+            //     }
+            
+            //     getPrivateId(): number {
+            //     return this.privateId;
+            //     }
+            // }
+            
+            // const student = new Student('Alice', 20, 123);
+            // console.log(student.name); // Output: Alice
+            // console.log(student.getPrivateId()); // Output: 123
 
+        // 2. Inability to Extend Multiple Interfaces:
+            //- this can be achieved using intersection types (define new interface with extends key word)
+            // interface Shape {
+            //     color: string;
+            //   }
+              
+            //   interface Size {
+            //     size: number;
+            //   }
+              
+            //   // Define a new interface using an intersection type
+            //   interface Square extends Shape, Size {
+            //     sideLength: number;
+            //   }
+              
+            //   // Example usage
+            //   const square: Square = {
+            //     color: 'red',
+            //     size: 10,
+            //     sideLength: 5
+            //   };
+              
+        //3. No Support for Static Members:
+        // interface Printable {
+        //     print(): void;
+        //     // This is not allowed
+        //     // staticStaticMember: string;
+        //   }
+          
+        //   class Printer implements Printable {
+        //     static staticMember: string = "Static Member";
+          
+        //     print(): void {
+        //       console.log("Printing...");
+        //     }
+        //   }
+          
+        //   // Accessing static member directly from the class
+        //   console.log(Printer.staticMember); // Output: Static Member
+          
+        //   // Accessing static member from an instance
+        //   const printer = new Printer();
+        //   // Below line will result in a TypeScript compilation error
+        //   // console.log(printer.staticMember);
+
+        //4. Limited Support for Implementing Function Signatures:
+            // interface MathOperation {
+            //     (x: number, y: number): number;
+            // }
+            
+            // const add: MathOperation = (x, y) => x + y;
+            // const subtract: MathOperation = (x, y) => x - y;
+            
+            // console.log(add(5, 3)); // Output: 8
+            // console.log(subtract(5, 3)); // Output: 2
+
+        //5. No Runtime Representation:
+            // interface Person {
+            //     name: string;
+            //     age: number;
+            // }
+            
+            // function greet(person: Person) {
+            //     return `Hello, ${person.name}!`;
+            // }
+            
+            // const john = { name: 'John', age: 30 };
+            // console.log(greet(john)); // Output: Hello, John!
+
+        //6. Lack of Flexibility:
+            // Cannot represent a union type directly using interfaces
+            // interface Result {
+            //     value: number | string; // This is fine
+            // }
+
+            // // Cannot represent a mapped type directly using interfaces
+            // interface Optional<T> {
+            //     [K in keyof T]?: T[K]; // Error
+            // }
+
+          
+          
+          
 
 
 // 4. Implementations of interfaces in JS in other modules / frameworks
