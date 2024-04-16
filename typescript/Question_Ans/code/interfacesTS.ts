@@ -20,7 +20,7 @@ interface Employee extends Person, Salary {
     companyAddress?: string;
 }
 
-let emp3:Person = {
+let emp:Person = {
     name: "Sameer",
     age: 30,
     salary: {
@@ -28,9 +28,48 @@ let emp3:Person = {
         currency: "INR"
     }
 }
-console.log(emp3);
+console.log(emp);
 
 // 2. Usecases of interfaces what its advantages
+    // 1. Object Shape Definition:
+    // Interfaces are commonly used to describe the structure of objects, providing clear contracts for their properties and methods.
+        interface Name {
+            firstName: string;
+            lastName: string;
+        }
+
+        interface User {
+            id: string;
+            name: Name;
+            email: string;
+            age?: number;   // Optional property
+        }
+
+        // Function that expects a user object and returns string
+        function displayUser(user:User): string {
+            return `User Details: ${user.name.firstName} ${user.name.lastName}`;
+        }
+
+        // 2. Method Signatures:
+        // Interfaces can define method signatures, allowing you to enforce that objects implementing the interface have specific methods with the correct signatures.
+
+        // Interface for a printable object
+        interface Printable {
+            print(data: string):void;
+        }
+
+        class Documents implements Printable {
+            constructor(private content: string){}
+            print(data: string): void {
+                console.log(`data from instance: ${data}`);
+                console.log(`data from class: ${this.content}`);
+            }
+        }
+
+        const docs = new Documents("data content");
+        docs.print("new");
+
+
 
 
 
