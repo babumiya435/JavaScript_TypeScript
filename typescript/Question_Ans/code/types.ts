@@ -1,6 +1,6 @@
 // 1. Defination (in the format of 'problem-solution') of interfaces in typescript
     //- types are used to create custom types
-        // - union types, conditional types, mapped types
+        // - union types, conditional types, mapped types, optional properties
 
 // 2. Usecases of interfaces what its advantages
     // // Union type using type
@@ -36,6 +36,7 @@ type BooleanTypeName = TypeName<boolean>;   // "boolean"
 type ObjectTypeName = TypeName<object>;     // "object"
 type ArrayTypeName = TypeName<string[]>;    // "object"
 type UndefinedTypeName = TypeName<undefined>; // "object"
+
 
 
 

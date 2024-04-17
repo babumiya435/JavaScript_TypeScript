@@ -60,7 +60,7 @@ console.log(emp);
 
         class Documents implements Printable {
             constructor(private content: string){}
-            print(data: string): void {
+            print(data) {
                 console.log(`data from instance: ${data}`);
                 console.log(`data from class: ${this.content}`);
             }
