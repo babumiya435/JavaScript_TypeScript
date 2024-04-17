@@ -1,4 +1,6 @@
 // 1. Defination (in the format of 'problem-solution') of interfaces in typescript
+    //- types are used to create custom types
+        // - union types, conditional types, mapped types
 
 // 2. Usecases of interfaces what its advantages
     // // Union type using type
